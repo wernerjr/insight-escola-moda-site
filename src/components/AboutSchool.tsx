@@ -114,7 +114,7 @@ export default function AboutSchool() {
           variants={itemVariants}
           className="grid grid-cols-2 md:grid-cols-4 gap-4"
         >
-          {images.map((image, index) => (
+          {images.map((_, index) => (
             <motion.div
               key={index}
               className="aspect-square bg-white/10 rounded-lg overflow-hidden"
@@ -122,7 +122,6 @@ export default function AboutSchool() {
               transition={{ duration: 0.2 }}
             >
               <div className="w-full h-full bg-gradient-to-br from-secondary/20 to-primary/50">
-                {/* Replace with actual images */}
                 <div className="flex items-center justify-center h-full text-white/30 text-sm">
                   Imagem {index + 1}
                 </div>
