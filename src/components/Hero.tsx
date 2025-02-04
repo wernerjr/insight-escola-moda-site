@@ -26,7 +26,7 @@ export default function Hero() {
             Uma jornada completa do básico ao avançado.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-20">
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -39,7 +39,7 @@ export default function Hero() {
                 duration={500}
                 className="btn btn-primary"
               >
-                Pré-venda do Livro
+                Conheça o Livro
               </Link>
             </motion.div>
             
@@ -62,9 +62,9 @@ export default function Hero() {
         </motion.div>
 
         {/* Decorative Elements */}
-        <div className="absolute left-0 right-0 bottom-0 h-64 bg-gradient-to-t from-tertiary to-transparent" />
-        <div className="absolute -left-48 -top-48 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
-        <div className="absolute -right-48 -bottom-48 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+        <div className="absolute left-0 right-0 bottom-0 h-48 bg-gradient-to-t from-tertiary via-tertiary/50 to-transparent pointer-events-none" />
+        <div className="absolute -left-48 -top-48 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -right-48 -bottom-48 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
       </div>
     </section>
   )
