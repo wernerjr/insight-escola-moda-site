@@ -89,11 +89,12 @@ export default function BookSection() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="btn btn-primary"
+                  disabled
                 >
-                  Reservar Agora
+                  Em Breve
                 </motion.button>
                 <p className="mt-4 text-sm text-primary/60">
-                  *Pré-venda com preço especial por tempo limitado
+                  *Aguarde o lançamento
                 </p>
               </div>
             </div>

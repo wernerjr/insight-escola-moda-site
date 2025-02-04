@@ -16,6 +16,14 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
   }
+
+  button, a, [role="button"], .btn {
+    @apply cursor-pointer;
+  }
+
+  button:disabled, .btn:disabled {
+    @apply opacity-50 cursor-not-allowed pointer-events-none;
+  }
 }
 
 @layer components {
@@ -24,7 +32,7 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-montserrat font-semibold transition-all duration-200 rounded-md;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-montserrat font-semibold transition-all duration-200 rounded-md cursor-pointer;
   }
 
   .btn-primary {
@@ -33,6 +41,10 @@
 
   .btn-outline {
     @apply text-secondary border-2 border-secondary hover:bg-secondary hover:text-white;
+  }
+
+  .btn-disabled {
+    @apply opacity-50 cursor-not-allowed pointer-events-none;
   }
 
   .section {
