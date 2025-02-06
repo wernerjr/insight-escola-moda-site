@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
+import yetzIcon from '/public/yetz-icon.svg'
 
 const socialIcons = {
   instagram: (
@@ -160,6 +161,17 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/60">
           <p>© {new Date().getFullYear()} Insight Escola de Moda. Todos os direitos reservados.</p>
+          <p className="mt-2">
+            Desenvolvido por{' '}
+            <a
+              href="https://www.yetz.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:text-secondary/80 transition-colors inline-flex items-center"
+            >
+              <img src={yetzIcon} alt="Yetz" className="h-5 w-auto" />
+            </a>
+          </p>
         </div>
       </div>
     </footer>
